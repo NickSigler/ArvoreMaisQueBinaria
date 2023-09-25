@@ -38,11 +38,11 @@ public class ArvoreBST {
         return no;
     }
 
-    public Node search(int data) {
+    public boolean search(int data) {
         Node noAtual = raiz;
         while (true) {
             if (noAtual.getData() == data) {
-                return noAtual;
+                return true;
             } else {
                 if (noAtual.getData() < data) {
                     noAtual = noAtual.getDireito();
@@ -50,11 +50,12 @@ public class ArvoreBST {
                     noAtual = noAtual.getEsquerdo();
                 }
             }
+            return false;
         }
     }
 
 
-    public Node remove(int data) {
+    public String remove(int data) {
         Node noAnterior = null;
         Node noAtual = raiz;
         boolean encontrado = false;
@@ -77,7 +78,7 @@ public class ArvoreBST {
 
         if (!encontrado)
         {
-            return noAtual;
+            return String.format("Nó não foi achado e não foi deletado %d",this.raiz.getData());
         }
 
         if (noAtual.getEsquerdo() == null && noAtual.getDireito() == null)
@@ -132,7 +133,8 @@ public class ArvoreBST {
             }
         }
 
-        return this.raiz;
+        return String.format("Nó foi deletado %d",this.raiz.getData());
+
     }
     public void printTree() {
         if (raiz != null) {
