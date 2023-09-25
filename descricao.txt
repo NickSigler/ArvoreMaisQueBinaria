@@ -1,0 +1,9 @@
+Esse repositório trata-se de um trabalho de estrutura de dados de listas não ordenadas,
+aqui estamos reproduzindo os conceitos de uma arvore não balenceada/bst, criando seus respectivos
+métodos e implementando eles. Com esse trabalho conseguimos ter uma ideia de como funciona
+uma estrutura mais complexa como ela e também entender mais como ela é usada em outros meios, não
+ela em si mas outras arvore mais complexas.
+
+Com esse trabalho entendemos a noção que a estrutura de dados como essas são importantes
+tal como o gerenciamentod dos arquivos no computador e também uma arvore de informações
+em redes sociais.
